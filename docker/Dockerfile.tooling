@@ -1,0 +1,10 @@
+FROM alpine
+RUN apk add \
+	bash \
+	curl \
+	zsh \
+	vim \
+	wget
+
+RUN curl https://getmic.ro | bash
+RUN mv ./micro /usr/bin/micro
